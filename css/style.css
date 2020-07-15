@@ -68,8 +68,22 @@ hr {
     grid-template-columns: 80% 20%;
 }
 
-.precios p {
+.precios .item p {
     margin: 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+.precios .item p::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #f78e21;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 5px;
 }
 
 .precios h4 {
