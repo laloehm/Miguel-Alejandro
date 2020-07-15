@@ -35,6 +35,11 @@ li {
 }
 
 /* Home */
+.home {
+    background-image: url(../images/Back.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 hr {
     width: 90%;
@@ -80,7 +85,7 @@ hr {
     grid-template-columns: 80% 20%;
 }
 
-.precios .item p {
+.precios p {
     margin: 0;
     padding-left: 10px;
     position: relative;
@@ -88,14 +93,18 @@ hr {
 
 .precios .item p::before {
     content: '';
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     background: #f78e21;
     display: block;
     position: absolute;
     border-radius: 50%;
     left: 0;
     top: 5px;
+}
+
+.precios span.list-none {
+    padding: 0 10px 0;
 }
 
 .precios h4 {
@@ -127,7 +136,7 @@ footer {
 }
 
 .contact {
-    width: 80%;
+    width: 70%;
     padding: 1rem;
 }
 
@@ -145,6 +154,7 @@ footer {
 
 .contact .item a {
     color: #636768;
+    font-size: 13px;
 }
 
 .firma {
